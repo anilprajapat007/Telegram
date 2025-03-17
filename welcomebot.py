@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 # Environment Variable Load karo
 load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")  # 🔒 Secure way to load the token
+TOKEN = os.getenv("TOKEN")  # 🔒 Secure way to load the token
 
 # Group Rules
 GROUP_RULES = """
