@@ -1,15 +1,23 @@
 import logging
+import os
+from dotenv import load_dotenv
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
-# Logging enable karein (Debugging ke liye)
+# ✅ Logging setup
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
-TOKEN = "7828191843:AAG5-YEpNszfMB8KAPEuZhHAfC3gBawzM0k"
+# ✅ Load environment variables
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")  
 
-# Group Rules (Fix Markdown Formatting Issues)
+if not TOKEN:
+    logger.error("🚨 BOT_TOKEN not found! Check .env file.")
+    exit()
+
+# ✅ Group Rules
 GROUP_RULES = """
 📢 *ग्रुप के नियम* 📢
 
