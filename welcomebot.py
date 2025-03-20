@@ -13,9 +13,7 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")  
 
-if not TOKEN:
-    logger.error("🚨 BOT_TOKEN not found! Check .env file.")
-    exit()
+
 
 # ✅ Group Rules
 GROUP_RULES = """
