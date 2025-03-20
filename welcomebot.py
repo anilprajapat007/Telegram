@@ -7,7 +7,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-TOKEN = "7828191843:AAGZaeh6fjZOn_wWCX0spH8E6YSdTfYmbYc"
+TOKEN = "7828191843:AAG5-YEpNszfMB8KAPEuZhHAfC3gBawzM0k"
 
 # Group Rules (Fix Markdown Formatting Issues)
 GROUP_RULES = """
