@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")  # Secure way to load the bot token
+TOKEN = os.getenv("TOKEN")  # Secure way to load the bot token
 
 # Group Rules (MarkdownV2 safe)
 GROUP_RULES = (
